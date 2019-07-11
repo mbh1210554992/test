@@ -3,7 +3,7 @@ package com.liveramp;
 import java.sql.*;
 
 public class ConnectDB {
-    private static String url="jdbc:mysql://localhost:3306/test01";
+    private static String url="jdbc:mysql://localhost:3306/test";
     private static String user="root";
     private static String password="123456";
     private static Connection conn;
@@ -74,7 +74,7 @@ public class ConnectDB {
                 int english=rs.getInt("english");
                 int c=rs.getInt("c++");
                 int total=rs.getInt("total");
-                System.out.println("学号:"+sno+" 姓名:"+sname+" math:"+math+" english:"+english+" c++"+c+" 总分为："+total);
+                System.out.println("学号:"+sno+" 姓名:"+sname+" 高数:"+math+" 英语:"+english+" c++"+c+" 总分为："+total);
             }
 
         }catch(SQLException e){
